@@ -75,13 +75,12 @@ nav {
   max-width: 200px;
   float: left;
   margin: 10px;
-
 }
 
 .article {
-  margin: 20px;
+  margin: 10px;
   width: 70%;
-  max-width: 700px;
+  max-width: 660px;
   float: left;
 }
 
@@ -124,6 +123,11 @@ form {
   float: right;
 }
 
+.main {
+  clear: both;
+
+
+}
 /* finally, the footer stretches across the whole page width in an open, centered sort of way. */
 .footer {
   font-size: .80em;
@@ -134,15 +138,5 @@ form {
 
 }
 
-.main {
-  width: 900px;
-  margin-left: auto;
-  margin-right: auto;
-  background-color: #4670a3;
-  -webkit-border-radius: 10px;
-  -moz-border-radius: 10px;
-  border-radius: 10px;
-  clear: both;
 
-}
 
