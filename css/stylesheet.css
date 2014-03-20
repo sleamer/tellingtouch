@@ -29,6 +29,35 @@ body {
   color: #33323c;
 }
 
+/* SAL: Added the navigation styling  */
+#navheadshot {
+  border: #33323c;
+  border-style: solid;
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  margin-bottom: 10%;
+}
+nav {
+  border: #33323c;
+  border-style: solid;
+  border-radius: 25px;
+  -moz-border-radius: 25px;
+  -webkit-border-radius: 25px;
+}
+
+nav ul {
+  list-style: none;
+}
+
+nav ul li a {
+  text-decoration: none;
+  font-weight: bolder;
+
+
+}
+
+
 /* The container sits in the middle of the page and is a fixed width Reference: http://www.w3schools.com/css/css_boxmodel.asp
 */
 

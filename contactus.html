@@ -13,7 +13,6 @@
     <div class="container"> <!-- contains everything on the page; used for centering and margins-->
 
     <header> <!-- contains the constant stuff at the top of the page -->    
-
           <img src="images/logo.jpg" class="logo"
            alt="blue skies with fluffy white clouds" 
            height="130px" 
@@ -23,9 +22,7 @@
           <h2>Get in touch with your <em>true</em> self</h2>
           <br class="clear"/>
     </header>
-
-    		
-      <div class="main"> 
+    <div class="main">
         <nav>
           <ul>
             <li><a href="index.html">Home</a></li>
@@ -39,38 +36,55 @@
             height="150px" 
             width="150px" />
         </nav>
-        <h1>Keeping in Touch</h1>  
+        <h1>Make an Appointment</h1>  
         <section class="article"> 
-        	<article>
-          	<div class="article_heading">
-          	 <h1>Value Proposition Statement</h1> <i>03/21/1998</i>
-          	</div>
-          	<div class="article_content">
-              <p>This is an article paragraph and other stuff.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. Proin id ultrices odio. Vivamus ut nisl nulla. Proin consectetur urna vitae est fermentum in placerat elit condimentum. Morbi iaculis elit sit amet lacus convallis a semper risus elementum.</p>
-          	</div>		
-        	</article>
-
-          <article>
+ 		<article>
             <div class="article_heading">
-             <h1>Current Promotion Title</h1> <i> 01/02/2050</i>
+             <h1>This article has a form</h1> <i>mm/dd/yyyy - replace with the date and a subject line of your choice</i>
             </div>
             <div class="article_content">
-              <img class="float_right" src="images/image_placeholder.png" alt="and an image placeholder" height="250" width="250" />
-
-              <p>Except the stuff in the article content is different.</p>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc pharetra ultricies nibh, in interdum tellus ultrices id. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; Suspendisse urna lorem, imperdiet a mattis sed, blandit id elit. Proin id ultrices odio. Vivamus ut nisl nulla. Proin consectetur urna vitae est fermentum in placerat elit condimentum. Morbi iaculis elit sit amet lacus convallis a semper risus elementum.</p>
-
-              <ol>
-                <li>this one</li>
-                <li>also has</li>
-                <li>a list of </li>
-                <li>items</li>
-              </ol>
+              <p>This is an article paragraph and other stuff.</p>
+              
+              <form method="post" action="http:form-echo.herokuapp.com/form-echo">
+                <table class="form_field_table">
+                  <tr>
+                    <td width="29%">Your email:</td>
+                    <td width="71%">
+                      <input type="text"  name="recipient" value="me@example.com" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="29%">Your name: </td>
+                    <td width="71%">
+                      <input type="text" name="customer_name" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="29%">Your phone:</td>
+                    <td width="71%">
+                      <input type="text" name="customer_phone" size="40" />
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="29%">Message:</td>
+                    <td width="71%">
+                      <textarea name="customer_message" rows="7" cols="50"> </textarea>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td width="29%">&nbsp</td>
+                    <td width="71%">
+                      <div class="buttons">
+                        <a href="#">Never mind</a>  <input name="submit" type="submit" value="Send us feedback" />
+                      </div> 
+                    </td>           
+                  </tr>
+                </table>                 
+              </form>
             </div>    
           </article>
         </section>
-         
+      </div>  
     	<!-- the footer area sits at the bottom of the page -->
 <footer>
   <div class="footer">
