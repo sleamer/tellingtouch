@@ -14,36 +14,53 @@ html h1 {
 }
 
 /* next we set up those properties that we want to apply everywhere that is visible on the page using the body selector. Notice the "font-family" */
-/*  SAL: Here's our color palette to match the logo based on the color #4670a3 with a compound structure. 
-    #33323c = very Dark Blue 
+/*  SAL: Here's our color palette to match the logo based on the color #4670a3 with a compound 
+structure.  I've updated this to a more pastel palette.
+    #031637 = very Dark Blue 
     #3c3732 = very Dark Brown 
     #4670a3 = Base Mid blue
     #5656a5 = more Saturated Mid Blue
-    #d57e46 = Mid Brownish Orange
-    #f1eae3 = almost white blueish gray
+    #d2a872 = Light Orange
+    #ccdbdd = very light blue
 */ 
 body {
   font-size: 1.1em;
-  font-family: "Helvetica Neue", Helvetica, Verdana, sans-serif;
-  background-color: #33323c;
-  color: #33323c;
+  font-family:'Merienda', cursive;
+  background-color: #031637;
+  color: #031637;
 }
+/* SAL: this changes all link styling */
+a { 
+  text-decoration: none;
+  font-weight: bolder;
+  color: #3c3732;
+} 
 
 /* SAL: Added the navigation styling  */
 #navheadshot {
-  border: #33323c;
-  border-style: solid;
+  border: solid #d57e46;
   margin-left: auto;
   margin-right: auto;
   display: block;
   margin-bottom: 10%;
+  border-radius: 10px;
+  -moz-border-radius: 10px;
+  -webkit-border-radius: 10px;
+  overflow: hidden;
 }
+
 nav {
-  border: #33323c;
+  border: #d57e46;
   border-style: solid;
-  border-radius: 25px;
-  -moz-border-radius: 25px;
-  -webkit-border-radius: 25px;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #d2a872;
+  width: 30%;
+  min-width: 50px;
+  max-width: 200px;
+  float: left;
+  margin: 10px;
 }
 
 nav ul {
@@ -53,9 +70,14 @@ nav ul {
 nav ul li a {
   text-decoration: none;
   font-weight: bolder;
-
-
+  color: #3c3732;
 }
+
+/* SAL: changes the nav link to be blue on current page */
+#navCurrentPage{
+  color:#031637;
+}
+
 
 
 /* The container sits in the middle of the page and is a fixed width Reference: http://www.w3schools.com/css/css_boxmodel.asp
@@ -66,6 +88,7 @@ nav ul li a {
   margin-left: auto;
   margin-right: auto;
   background-color: #4670a3;
+  border: solid #5656a5;
   -webkit-border-radius: 10px;
   -moz-border-radius: 10px;
   border-radius: 10px;
@@ -73,18 +96,21 @@ nav ul li a {
 
 }
 
+/* SAL: this is to skip the title on robot searches. Bad robots... */
 
-
-/* The next set of styles pretty much just "open up" the page and create white space */
-
-/* header {
-font-size: 5px;
-float: ;
-margin: 45px;
-padding: 5px;
-
+.fakeCoh1 {
+  font-size: 1.7em;
+  font-weight: bolder;
+  float: left;
+  width: 200px;
+  margin-top: 30px;
+  margin-left: 30px;
 }
-*/
+
+.fakeRegh1{
+  font-size: 1.2em;
+  font-weight: bold;
+}
 
 header h1, h2 {
   float: left;
@@ -114,29 +140,13 @@ header h2 {
 
 .logo {
   float: right;
-  padding: 2px;
   margin: 15px;
-  border-style:solid;
   border-width:5px;
-  border-color:black;
+  border: solid #5656a5;
   border-radius:10px;
-}
-
-
-/* we want the validation pages to appear on the right side of the page inside the container */
-
-.validation_badge {
-  float: right;
-}
-
-
-
-nav {
-  width: 30%;
-  min-width: 50px;
-  max-width: 200px;
-  float: left;
-  margin: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  overflow: hidden;
 }
 
 .article {
@@ -150,16 +160,23 @@ nav {
   width: 80%;
   margin-left: 20px;
   padding: 10px;
-  border: 1px solid #3c3732;
-  background-color: #d57e46;
+  border: solid #d57e46;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  background-color: #d2a872;
 
 }
 
 .article_content {
   margin: 0 20px 0 20px;
   padding: 10px;
-  border: 1px solid gray;
-  background-color: #f1eae3;
+  border: 1px solid #3c3732;
+  background-color: #ccdbdd;
+  border-radius: 10px;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border: solid #5656a5;
 
 }
 
