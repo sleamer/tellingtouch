@@ -207,7 +207,7 @@ form {
 
 
 }
-/* finally, the footer stretches across the whole page width in an open, centered sort of way. */
+
 .footer {
   background-color: #4670a3
   font-size: .80em;
@@ -230,7 +230,7 @@ form {
 }
 
 @media (max-width: 600px) {
+}
   .validation_badge {
     display: none;
   }
-
